@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	background-color: transparent;
+}
+head { display: none; }
+
+body {
+	font-family: "Times New Roman", "Times", "serif";
+	color: white;
+	background-color: black;
+	background-size: 100%;
+}
+
+/*------------------
+     NAVIGATION
+------------------*/
+nav a {
+	text-decoration: none;
+	transition: color .1s ease-in;
+	color: white;
+}
+
+nav a:hover {
+	transition: color .1s ease-in;
+	color: green;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav li {
+	padding: 10px;
+}
+
+.title {
+	font-size: 24px;
+    margin-right: auto;
+}

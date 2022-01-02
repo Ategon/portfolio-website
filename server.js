@@ -11,8 +11,29 @@ app.use(express.json());
 app.use(express.static("public"));
 app.get("/", sendIndex);
 
+app.get("/about", sendAbout);
+app.get("/contact", sendContact);
+app.get("/skills", sendSkills);
+app.get("/projects", sendProjects);
+
 function sendIndex(req, res, next){
 	res.render("home");
+}
+
+function sendAbout(req, res, next){
+	res.render("about");
+}
+
+function sendContact(req, res, next){
+	res.render("contact");
+}
+
+function sendSkills(req, res, next){
+	res.render("skills");
+}
+
+function sendProjects(req, res, next){
+	res.render("projects");
 }
 
 //For local copy
