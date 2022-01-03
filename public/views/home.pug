@@ -4,8 +4,53 @@ html(lang="en")
 		title Benjamin Barbeau
 		link(rel="stylesheet" href="css/template.css" type='text/css')
 		link(rel="stylesheet" href="css/home.css" type='text/css')
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet")
 body
 	include ./header
+	p(style="padding: 0px 12px; font-size: 24px; color: #adadad") Ategon
+	
 	
 	main
-		h1 Hello world!
+		#upper
+		#scrollButton
+			h1 #[a(href="#projects") ▼]
+			
+		#projects
+			h1 #[a(href="/projects") Projects]
+			ul
+				li
+					h2 #[a(href="/projects/portfolio-website") Portfolio Website]
+					p HTML, CSS, JS, Pug, Express
+					br
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem orci, fermentum eget quam quis, 
+				li
+					h2 #[a(href="/projects/bored-pixels-9") Bored Pixels Jam 9]
+					p C#, Unity
+					br
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem orci, fermentum eget quam quis, 
+				li
+					h2 #[a(href="/projects/mini-jam-94") Mini Jam 94]
+					p C#, Unity
+					br
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem orci, fermentum eget quam quis, 
+				li
+					h2 #[a(href="/projects/discord-bot") Discord Bot]
+					p JS, Canvas, Moment.js
+					br
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem orci, fermentum eget quam quis, 
+					
+		#skills
+			h1 #[a(href="/skills") Skills]
+			ul
+				li
+					img(src="../images/HomeBackground.png")
+					img(src="../images/HomeBackground.png")
+					img(src="../images/HomeBackground.png")
+		#about
+			h1 #[a(href="/about") About]
+			
+		#contact
+			h1 #[a(href="/contact") Contact]
+			

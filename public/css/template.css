@@ -9,35 +9,38 @@
 head { display: none; }
 
 body {
-	font-family: "Times New Roman", "Times", "serif";
+	font-family: "Lato", "Times", "serif";
 	color: white;
 	background-color: black;
-	background-size: 100%;
+	background-size: cover;
 }
 
-/*------------------
-     NAVIGATION
-------------------*/
-nav a {
+a {
 	text-decoration: none;
 	transition: color .1s ease-in;
 	color: white;
 }
 
-nav a:hover {
+a:hover {
 	transition: color .1s ease-in;
 	color: green;
 }
+
+/*------------------
+     NAVIGATION
+------------------*/
 
 nav ul {
 	display: flex;
 }
 
 nav li {
-	padding: 10px;
+	padding: 16px;
+	font-size: 24px;
 }
 
 .title {
-	font-size: 24px;
+	padding: 10px;
+	font-size: 36px;
     margin-right: auto;
 }

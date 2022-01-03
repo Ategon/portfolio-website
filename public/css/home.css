@@ -1,3 +1,108 @@
 body {
-	background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)), url("../images/SpaceBackground.png");
+	background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)), url("../images/HomeBackground.png");
+	background-position: center center;
+}
+
+#upper {
+	height: 85vh;
+}
+
+#scrollButton {
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+}
+
+#scrollButton a {
+	transition: border .1s ease-in, color .1s ease-in;
+	border: 1px solid hsla(0, 0%, 5%, 0);
+	border-radius: 5px;
+	padding: 0px 50px;
+	position: absolute;
+	animation: MoveUpDown 2s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+
+#scrollButton a:hover {
+	transition: border .1s ease-in;
+	border: 1px solid green;
+	border-radius: 5px;
+	padding: 0px 50px;
+}
+
+#projects {
+	background-image: linear-gradient(hsla(0, 0%, 5%, 1), hsla(0, 0%, 5%, 1));
+	padding: 10px 0px 0px 0px;
+}
+
+#projects ul {
+	display: flex;
+	justify-content: center;
+}
+
+#projects ul li {
+	flex-grow: 2;
+	padding: 10px;
+}
+
+
+
+#projects ul li:nth-child(1) {
+	background-image: linear-gradient(hsla(130, 20%, 25%, 0.2), hsla(130, 20%, 25%, 0.2)), url("../images/HomeBackground.png");
+}
+
+#projects ul li:nth-child(2) {
+	background-image: linear-gradient(hsla(130, 20%, 25%, 0.2), hsla(130, 20%, 25%, 0.2)), url("../images/BoredPixels9.png");
+	background-size: 100%;
+}
+
+#projects ul li:nth-child(3) {
+	background-image: linear-gradient(hsla(130, 20%, 25%, 0.2), hsla(130, 20%, 25%, 0.2)), url("../images/MiniJam94.png");
+}
+
+#projects ul li:nth-child(4) {
+	background-image: linear-gradient(hsla(130, 20%, 25%, 0.2), hsla(130, 20%, 25%, 0.2)), url("../images/DiscordBot.png");
+}
+
+h1 {
+	margin: 20px;
+}
+
+#skills {
+	background-image: linear-gradient(#89A257, #89A257);
+	padding: 10px 0px 0px 0px;
+}
+
+#skills ul {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+#skills ul li {
+	display: inline-flex;
+	flex-grow: 2;
+}
+
+#skills img {
+	width: 100px;
+	height: 100px;
+}
+
+#about {
+	background-image: linear-gradient(#4D8061, #4D8061);
+	padding: 10px 0px 0px 0px;
+}
+
+#contact {
+	background-image: linear-gradient(#1E3A29, #1E3A29);
+	padding: 10px 0px 0px 0px;
 }
