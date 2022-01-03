@@ -46,12 +46,13 @@ body {
 #projects ul {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 #projects ul li:not(.outList li) {
-	flex-grow: 2;
+	flex-grow: 1;
 	padding: 10px;
-	height: 300px;
+	width: 200px;
 	background-size: cover;
 	background-position: center;
 }
@@ -87,20 +88,21 @@ h1 {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
-	padding: 40px;
 	background-image: linear-gradient(#2a2a2a, #2a2a2a);
+	flex-wrap: wrap;
 }
 
 #skills ul li {
 	display: inline-flex;
 	display: inline-block;
 	text-align: center;
+	padding: 30px;
 }
 
 #skills img {
 	width: 100px;
 	height: 100px;
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 30px 0px;
 }
 
 #about {
@@ -152,4 +154,18 @@ h1 {
 #mediaButtons ul li img {
 	width: 64px;
 	height: 64px;
+}
+
+#bio {
+	padding: 20px;
+	background-image: linear-gradient(#2a2a2a, #2a2a2a);
+}
+
+#contactDiv {
+	padding: 20px;
+	background-image: linear-gradient(#2a2a2a, #2a2a2a);
+}
+
+#contactParagraph {
+	padding: 0px 0px 20px 0px;
 }
