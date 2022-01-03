@@ -93,12 +93,14 @@ h1 {
 
 #skills ul li {
 	display: inline-flex;
-	flex-grow: 2;
+	display: inline-block;
+	text-align: center;
 }
 
 #skills img {
 	width: 100px;
 	height: 100px;
+	margin: 0px 0px 20px 0px;
 }
 
 #about {
@@ -137,4 +139,17 @@ h1 {
 .outList li {
 	background-image: none;
 	display: inline-flex;
+}
+
+#mediaButtons ul {
+	display: flex;
+}
+
+#mediaButtons ul li {
+	display: inline-flex;
+}
+
+#mediaButtons ul li img {
+	width: 64px;
+	height: 64px;
 }
